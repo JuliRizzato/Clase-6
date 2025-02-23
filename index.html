@@ -8,50 +8,33 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <body>   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="inicio">
         <div class="bg-secondary p-2 ps-4 pe-4 container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#inicio">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Ir a
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#tarjetas">Ir a las tarjetas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#footer">Ir al footer</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
-           <button class="btn btn-primary me-5">
-              Mensajes <span class="badge bg-danger">2</span>
-          </button>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-success" type="submit">Buscar</button>
             </form>
-            <a href=""><input type="button" value="Registrarse"></a>
           </div>
         </div>
       </nav>
-
-
-
-
 
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -76,8 +59,9 @@
   </div>
 
 <!--Aquí van tarjetas en horizontal-->
-  <div class="card col-4" style="width: 18rem;">
-    <img src="img/Montaña.jpeg class="card-img-top" alt="...">
+<div class="row" id="tarjetas">
+  <div class="card col-3 text-center m-3 ms-5">
+    <img src="img/Montaña.jpeg"class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Montaña</h5>
       <p class="card-text">Esta montaña está completamente generada por inteligencia artifical</p>
@@ -85,55 +69,90 @@
     </div>
   </div>
 
-  <div class="card col-4" style="width: 18rem;">
-    <img src="img/Montaña.jpeg class="card-img-top" alt="...">
+  <div class="card col-3 text-center m-3">
+    <img src="img/Montaña.jpeg"class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title"></h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">Montaña</h5>
+      <p class="card-text">Esta montaña está completamente generada por inteligencia artifical</p>
+      <a href="#" class="btn btn-primary">Leer más</a>
     </div>
   </div>
 
-  <div class="card col-4" style="width: 18rem;">
-    <img src="img/Montaña.jpeg class="card-img-top" alt="...">
+  <div class="card col-3 text-center m-3">
+    <img src="img/Montaña.jpeg"class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title"></h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">Montaña</h5>
+      <p class="card-text">Esta montaña está completamente generada por inteligencia artifical</p>
+      <a href="#" class="btn btn-primary">Leer más</a>
     </div>
   </div>
-
-
-  <form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Ingrese su correo electrónico</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Ingrese su contraseña</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Mantener la sesión iniciada</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
-  </form>
-
+</div>
 <!--Aquí van otras dos tarjetas en horizontal-->
+<div class="row">
+  <div class="card col-3 text-center m-3 ms-5">
+    <img src="img/Montaña.jpeg"class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Montaña</h5>
+      <p class="card-text">Esta montaña está completamente generada por inteligencia artifical</p>
+      <a href="#" class="btn btn-primary">Leer más</a>
+    </div>
+  </div>
 
+  <div class="card col-3 text-center m-3">
+    <img src="img/Montaña.jpeg"class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Montaña</h5>
+      <p class="card-text">Esta montaña está completamente generada por inteligencia artifical</p>
+      <a href="#" class="btn btn-primary">Leer más</a>
+    </div>
+  </div>
+</div>
 
 
 <!--Aquí va un video-->
 
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+<!--Aquí va el formulario-->
 
+<form class="m-3 p-3 bg-secondary">
+  <div class="row">
+    <div class="col-6">
+      <label for="" class="form-label">Nombre</label>
+      <input type="" class="form-control" id="" placeholder="Igrese su nombre">
+    </div>
+    <div class="col-6">
+      <label for="" class="form-label">Apellido</label>
+      <input type="" class="form-control" id="" placeholder="Ingrese su apellido">
+    </div>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="" class="form-label">Correo electrónico</label>
+    <input type="" class="form-control" id="" placeholder="Ingrese su correo electrónico">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">DNI (Sin puntos)</label>
+    <input type="" class="form-control" id="" placeholder="Ingrese su DNI">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label"></label>
+    <input type="" class="form-control" id="" placeholder="">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="">
+    <label class="form-check-label" for="">Me gustaría recibir promociones y novedades a mi correo</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+<!--Aquí va el footer-->
+<div class="container" id="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Mi página web</p>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="#carouselExample" class="nav-link px-2 text-body-secondary">Carrusel</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
